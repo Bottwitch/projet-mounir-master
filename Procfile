@@ -1,1 +1,1 @@
-web: gunicorn cv_projet.wsgi
+web: gunicorn cv_app.wsgi
