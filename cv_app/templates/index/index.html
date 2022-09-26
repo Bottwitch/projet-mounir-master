@@ -1,0 +1,478 @@
+{% include "index/nav.html" %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "index/bootstrap/bootstrap.min.css" %}>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href={% static "index/css/style copy 14.css" %}>
+    <title>Accueil</title>
+</head>
+<body>
+
+    <a href="#">
+        <div class="btn_up">
+            <img class="icon_up" src={% static "index/design/fleches.svg" %}></img>
+        </div>
+    </a>
+
+    
+    
+    
+    
+    
+    <div class="container First" id="propos">
+        <div class="container">
+            <div class="row title-competences1">
+                <div class="col-12 figure">
+                    <h1 class="title-competences">À propos</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="card Photo_moi_card">
+                    <img class="Photo_moi" src={% static "index/design/unnamed2.jpg" %} alt="MySelfPics">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 block_info">
+                <div class="card">
+                    <h1 class="titre">{{ name }} {{ lastname }}</h1>
+                    <div class="description">
+                        <h6>Mon age: <b>{{ age }}</b></h6>
+                        <h6>Mon numero de telephone: <b>{{ phone }}</b></h6>
+                        <h6>Mon adresse: <b>{{ street }}</b></h6>
+                        <h6>Mon mail: <b>{{ mail }}</b></h6>
+                    </div>                                     
+                    <!-- <h1 class="titre">Salut, moi c'est Robert Cernat et <span class="first_tile">voici mes projets</span></h1>
+                    <h4 class="sous_title">Je suis web devellopeur back-end en quêtes d'experiences, challenges et connaisances.</h4> -->
+                </div>
+                <div class="sous_title">Developpeur web Back-end</div>
+
+                <div class="icons">
+                    <a href="https://instagram.com/le_web_dev" target="_blank" class="icoon icon--instagram">
+                      <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/robert-c-513a7823a/" target="_blank" class="icoon icon--linkedin">
+                      <i class="ri-linkedin-line"></i>
+                    </a>
+                    <a href="https://github.com/Bottwitch" target="_blank" class="icoon icon--github">
+                      <i class="ri-github-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="competences" class="bg">
+        <div class="container">
+            <div class="row title-competences2">
+                <div class="col-12 figure">
+                    <h1 class="title-competences">Mes compétences techniques</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container cont-ski1">
+            <div class="row">
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation sql-text">
+                            J'ai de très bonnes connaissances en MySQL, l'un de mes plus gros coups de cœur en informatique. 
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>MySQL</h2>
+                            <div class="progress-bar">
+                                <div class="sql">
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+                
+            
+            
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation python-text">
+                            C'est en python que j'ai commencé et c'est avec lui que j'ai fait le plus de projet. C'est l'un des langages que je connais le mieux. 
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>Python</h2>
+                            <div class="progress-bar">
+                                <div class="python">
+                                    <span>86%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+            
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation django-text">
+                            Le framework ou je suis plus à l'aise, car il est très simple d'utilisation et facile à comprendre. 
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>Django</h2>
+                            <div class="progress-bar">
+                                <div class="django">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+            
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation php-text">
+                            J'adore ce langage, car c'est celui qui permet de faire beaucoup de choses facilement en back-end. 
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>PHP</h2>
+                            <div class="progress-bar">
+                                <div class="php">
+                                    <span>78%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+            
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation symfony-text">
+                            Une fois qu'on le comprend, c'est simple d'utilisation et un gain de temps non-négligeable pour facilement avoir une bonne base de back-end pour notre projet. 
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>Symfony</h2>
+                            <div class="progress-bar">
+                                <div class="symfony">
+                                    <span>78%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <div class="Text">
+                        <p class="text-presentation git-text">
+                            L'outil que j'ai dû apprendre le plus, car grâce à son utilité, je ne pouvais pas passer a coté.  
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="col-6">
+                    <div class="container cont-ski">
+                        <div class="skills">
+                            <h2>Git / Github</h2>
+                            <div class="progress-bar">
+                                <div class="git">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+                                            {# Etudes #}
+
+    <div class="etudes">
+        <div class="container">
+            <div class="row title-competences2">
+                <div class="col-12 figure">
+                    <h1 class="title-competences" id="etudes">Etudes</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container etudes-cont">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2018: Etude profesionnelles en bureautique a la providence anderlecht.</h5>
+                </div>
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2017: Etude profesionnelles en electricité Victor Horta.</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2016: Etude generale a Eddy merck.</h5>
+                </div>
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2015: Etude generale a Eddy merck.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                                            {# Experiences #}
+    <div class="bg"  id="Experiences">
+        <div class="container">
+            <div class="row title-competences2">
+                <div class="col-12 figure">
+                    <h1 class="title-competences">Experiences</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2021-2022: Formation developpeur web Full-stack.</h5>
+                </div>
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2020-2021: Vendeur telephonique chez IPG.</h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2019-2020: Magasinier au carrefour.</h5>
+                </div>
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Année 2018-2019: Debut du self-learning. Le moment où je commence a apprendre la programmation.</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+                                            {# projet #}
+    <div id="portfolio">
+
+        <div class="container">
+            <div class="row title-competences2">
+                <div class="col-12 figure">
+                    <h1 class="title-competences">Portfolio</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h5 class="text-presentation">Un site web d'hébergement de vidéos et média social </h5>
+                    <a href="/../portfolio/" target="_blank"  class="text_link2"><h6 class="text_link">Examiner</h6></a>
+                </div>
+
+                <div class="col-6">
+                    <div class="card">
+                        <div class="percent" style="--clr:#00b3ff;--num:85;">
+
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>85<span>%</span></h2>
+                                <p>Symfony</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Un bot instagram qui publie automatiquement 3 fois par jour sur different compte.</h5>
+                    <a href="/../portfolio/" class="text_link2"><h6 class="text_link">Examiner</h6></a>
+                </div>
+
+                <div class="col-6">
+                    <div class="card">
+                        <div class="percent" style="--clr:#00b3ff;--num:100;">
+
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>100<span>%</span></h2>
+                                <p>Python</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+                
+                
+                <div class="col-6">
+                    <h5 class="text-presentation">Un systeme de boutons avec une animation au passage de la souris</h5>
+                    <a href="/../portfolio/" class="text_link2"><h6 class="text_link">Examiner</h6></a>
+                </div>
+
+                <div class="col-6">
+                    <div class="card">
+                        <div class="percent" style="--clr:#00b3ff;--num:100;">
+
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>100<span>%</span></h2>
+                                <p>html/css</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <h5 class="text-presentation">Mon propre gestionnaire de mot de passe</h5>
+                    <a href="/../portfolio/" class="text_link2"><h6 class="text_link">Examiner</h6></a>
+                </div>
+
+                <div class="col-6">
+                    <div class="card">
+                        <div class="percent" style="--clr:#00b3ff;--num:100;">
+
+                            <div class="dot"></div>
+                            <svg>
+                                <circle cx="70" cy="70" r="70"></circle>
+                                <circle cx="70" cy="70" r="70"></circle>
+                            </svg>
+                            <div class="number">
+                                <h2>100<span>%</span></h2>
+                                <p>Python</p>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row title-competences2">
+                <div class="col-12 figure">
+                    <h1 class="title-competences">Et encore plein d'autres projet</h1>
+                    <a href="/../portfolio/" class="text_link2"><h6 class="text_link">Afficher tous les autres projets</h6></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    
+
+    {# <div class="footer">
+        {% include "index/footer.html" %}
+    </div> #}
+    
+    
+
+    
+
+
+
+
+
+
+
+
+        
+            
+        
+
+
+   
+
+    
+
+    
+
+
+    <!-- <a href="#" class="btn">
+        En savoir plus
+    </a> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" integrity="sha512-14AZ/DxUrlF26z6v7egDkpJHKyJRn/7ue2BgpWZ/fmqrqVzf4PrQnToy99sHmKwzKev/VZ1tjPxusuTV/n8CcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src={% static "index/js/script.js" %}></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+
+    
+</body>
+</html>

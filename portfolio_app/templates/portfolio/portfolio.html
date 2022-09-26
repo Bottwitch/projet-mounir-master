@@ -1,0 +1,291 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href={% static "portfolio/bootstrap/bootstrap.min.css" %}> -->
+    <link rel="stylesheet" href={% static "portfolio/css/portfolio copy 16.css" %}>
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <a href="#">
+        <div class="btn_up">
+            <img class="icon_up" src={% static "portfolio/design/fleches.svg" %}></img>
+        </div>
+    </a>
+
+    <div class="title">
+        <a href="#projet_back"><button class="button_back_end"><h1>Mes Projets Back-end</h1></button></a>
+
+        <a href="#frond_end"><button class="button_front_end"><h1>Mes Projets Front-end</h1></button></a>
+    </div>
+
+
+
+
+    <div class="title">
+        <h1  id="projet_back">Mes Projets Back-end</h1>
+    </div>
+    
+    <h3 class="retour"><button  class="retour2"><a href="/../" class="link_retour">Retour</a></button></h3>
+
+    <div class="container2">
+
+        <div class="card">
+            <header class="header">
+                <h5 class="text_date">2022</h5>
+                <h4 class="text_presentation">Un site web d'hébergement de vidéos et média social</h4>
+                <p class="text_description">Créer un site comme Youtube mais avec symfony. (Projet pour ma formation)<br><br><br>Techno utilisées: Symfony, Html, Css, Twig.</p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/symfony.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/symfony2.jpg" %}>
+            </figure>
+
+
+            
+
+        </div>
+
+        
+        <div class="card">
+
+           <header class="header">
+                    
+                <h5 class="text_date">2022</h5>
+                <h4 class="text_presentation">un bot python pour instagram</h4>
+                <p class="text_description">le bot selectionne des photos sur des comptes predefinis en verifiant que la photo n'as pas été encore publié.<br><br><br>Techno utilisée: Python.</p>
+            </header>
+
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/insta1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/insta2.jpg" %}>
+            </figure>
+
+
+        </div>
+        
+        
+
+        <div class="card">
+            
+            <header class="header">
+                <h5 class="text_date">2019</h5>
+                <h4 class="text_presentation">Mon propre gestionnaire de mot de passe</h4>
+                <p class="text_description">J'ai repris les mêmes fonctionalité que Dashlane, hash de mot de passe, ont peut aussi le copier, le modifier et afficher tous les comptes.<br><br><br>Techno utilisée: Python.</p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/mdp1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/mdp2.jpg" %}>
+            </figure>
+
+
+        </div>
+
+        <div class="card">
+            
+            <header class="header">
+                <h5 class="text_date">2019</h5>
+                <h4 class="text_presentation">Un bot qui publie des avis</h4>
+                <p class="text_description">C'est un simple programme qui grace au web scraping, publie automatiquement des avis sur n'importe quel site.<br><br><br>Techno utilisées: Python, Selenium.</p>
+                
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/avis1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/avis2.jpg" %}>
+            </figure>
+
+
+        </div>
+
+        <div class="card">
+            
+            <header class="header">
+                <h5 class="text_date">2018</h5>
+                <h4 class="text_presentation">Un bot twitter d'astrologie / horoscope</h4>
+                <p class="text_description">Un bot twitter qui affiche: "Les stars du même signe astrologique que nous", "Les meilleures compatibilité amoureuse". Et bien d'autres.<br><br><br>Techno utilisées: C, Python.</p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/astro3.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/astro2.jpg" %}>
+            </figure>
+
+
+        </div>
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date">2022</h5>
+                <h4 class="text_presentation">Un jeu en python</h4>
+                <p class="text_description">Un jeu en python qui devine le prix, avec au choix plusieurs niveaux de difficultés.<br><br><br>Techno utilisée: Python.</p>
+            </header>
+
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/prix.jpg" %}>
+                
+            </figure>
+        </div>
+
+
+        
+        
+
+        
+    </div>
+    
+
+
+
+
+
+    <div class="title2" id="frond_end"><h1>Mes projets front-end (Html, Css, Js)</h1></div>
+    <h3 class="retour"><button  class="retour2"><a href="/../" class="link_retour">Retour</a></button></h3>
+
+    <div class="container2">
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Un systeme de boutons avec une animation au passage de la souris</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://button-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/btn3.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/btn2.jpg" %}>
+            </figure>
+            
+        </div>
+
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Un formulaire de contact avec une animation des blocs en css</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://contact-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/contact1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/contact2.jpg" %}>
+            </figure>
+            
+        </div>
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Champ de saisie avec une animation en css au moment d'ecrire du texte</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://name-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/name1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/name2.jpg" %}>
+            </figure>
+            
+        </div>
+
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Menu avec animation sur le coté en css au passage de la souris </h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://menu1-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/menu2.1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/menu2.2.jpg" %}>
+            </figure>
+            
+        </div>
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Un deuxieme systeme de menu avec animation au moment de cliquer</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://menu2-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/menu1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/menu2.jpg" %}>
+            </figure>
+            
+        </div>
+
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Plusieurs progress-bar avec animation au chargement de la page</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://progress-bar-robert-cernat.netlify.app/" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/progressbar1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/progressbar2.jpg" %}>
+            </figure>
+            
+        </div>
+
+        <div class="card">
+
+            <header class="header">
+                <h5 class="text_date text_date2">2022</h5>
+                <h4 class="text_presentation">Lien des reseaux sauciaux avec animation de vrabration en css</h4>
+                <p class="text_description"><button class="link_btn2"><a href="https://social-media-robert-cernat.netlify.app//" target="_blank" class="link_btn">L'essayer</a></button></p>
+            </header>
+
+            <figure>
+                <img class="instaImg" src={% static "portfolio/design/social1.jpg" %}>
+                <img class="instaImg2" src={% static "portfolio/design/social2.jpg" %}>
+            </figure>
+            
+        </div>
+        
+
+
+    </div>
+
+
+
+    
+
+
+
+
+       
+        
+        
+            
+        
+        
+            
+
+    
+    
+</body>
+</html>
+
+
+
+
